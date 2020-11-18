@@ -1,0 +1,1023 @@
+/* RESET */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1em;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;   
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content:''; content:none;
+
+}
+/*  END RESET */
+
+
+
+
+body {
+    font-family: sans-serif; 
+    background-color: #d9dfca; 
+    color: #323e18; 
+}
+
+
+
+/*HEADER*/
+
+.header {
+    background-color: #3f4e1e; 
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.2); 
+    position: fixed; 
+    position:sticky; 
+    width: 100%;
+    z-index: 3;  
+}
+
+.logo {
+    color: white; 
+    float: left; 
+    display: block;
+    font-family:"Avenir black";
+    font-size: 1.6em; 
+    padding-top: 35px;  
+    margin-left: 25px; 
+    margin-bottom: 35px; 
+}
+
+.header ul li a {
+    display: block; 
+    margin-left: 25px; 
+    margin-bottom: 20px;  
+    margin-right: 25px;  
+    text-decoration: none; 
+    color: white; 
+    font-size: 0.9em; 
+    font-family:"Avenir";
+    
+}
+
+.header ul {
+    clear: both;
+    overflow: hidden; 
+    background-color: #3f4e1e; 
+    max-height: 0; 
+    transition: max-height .2s ease-out; 
+}
+
+/*Hover*/
+    .header ul li a:hover { 
+    color: #BDCC9B;  
+}
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #3f4e1e; 
+    padding: 0.8em;
+    text-align: right; 
+    font-size: 0.8em;
+    color: white; 
+}
+
+
+
+
+
+/*MENU STARTER*/
+
+.header .menu-icon {
+    margin-right: 40px; 
+    padding-top: 40px; 
+    position: relative; 
+    float: right; 
+    cursor: pointer; 
+}
+
+.header .menu-icon .nav-icon { /*Midterste linje i burgerbar + dem alle*/
+    background: white;  
+    display: block; 
+    height: 3px; 
+    width: 25px; 
+    position: relative; 
+    transition: background .2s ease-out; 
+}
+
+.header .menu-icon .nav-icon:before { /*Nederste linje i burgerbar*/
+    background: white;  
+    content: ''; 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    transition: all .2s ease-out; 
+    top: 8px; 
+}
+
+.header .menu-icon .nav-icon:after { /*Øverste linje i burgerbar*/
+    background: white; 
+    content: ''; 
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    transition: all .2s ease-out; 
+    top: -8px; 
+}
+
+.header .menu-btn { /*Usynlig knap*/
+    display: none; 
+}
+
+/*MENU SLUTTER*/
+
+
+
+
+/*BURGERBAR --> KRYDS*/
+
+.header .menu-btn:checked ~ ul {
+    max-height: 350px; 
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent; 
+
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0; 
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0; 
+}
+
+/*KRYDS SLUT*/
+
+
+
+
+/*TYPOGRAFI*/
+
+h1 {
+    font-family: "Avenir black"; 
+}
+
+h2 { 
+    font-family: "chalkduster"; 
+}
+
+p { 
+    font-family: "Avenir";
+    line-height: 1.5em; 
+
+}
+/*TYPOGRAFI SLUT*/
+
+
+
+
+/*VIDEO + TEKST*/
+
+.banner {
+    width: 100%;
+    height: 28vh; 
+    display: flex;
+    justify-content: center;
+
+}
+
+#video {
+    position:absolute; 
+    top; 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    pointer-events: none;
+
+}
+
+.banner .content {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+    color: #323e18; 
+    margin-top: 20px; 
+    
+}
+
+.banner .content h2 {
+    margin-top: 10px; 
+    font-size: 1.1em; 
+}
+
+/*VIDEO + TEKST SLUT*/
+
+
+
+
+
+/*HAR DU OGSÅ PROBLEMER MED KRÆSNE BØRN? SEKTION*/
+#overskrift1 {
+    margin-bottom: 10px; 
+    font-size: 1.2em; 
+}
+
+/*- Så giv dem madmodet tilbage*/
+#underoverskrift1 {
+    margin-bottom: 10px; 
+    font-size: 1em; 
+}
+ #afsnit1 {
+    margin: 20px; 
+}
+
+#kids {
+    visibility: hidden; 
+    display: none; 
+}
+
+
+/*POST ITS*/
+
+#postits2 {
+    visibility: hidden; 
+    display: none; 
+}
+
+#postits1 {
+    visibility: visible; 
+    display: block; 
+}
+
+
+
+/*UGENS PRODUKT*/
+
+#overskrift3 {
+    margin-bottom: 10px; 
+    font-size: 1.2em;
+    margin-left: 20px; 
+}
+
+#tekst3 {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+/*Baggrundsbillede - spiral 1*/
+#afsnit2 {
+    padding-top: 70px; 
+    background-image: url(Billeder/Spiral_1.png); 
+    background-size: 350px;  
+    background-repeat: no-repeat;
+}
+
+
+/*Billede*/
+
+.frugtspaghetti {
+    padding-bottom: 50px; 
+    margin-right: 50px; 
+    margin-left: 50px; 
+    margin-top: 25px; 
+}
+
+#frugtspaghetti1 {
+    visibility: hidden; 
+    display: none; 
+}
+
+#frugtspaghetti2 {
+    visibility: visible;
+    display: block;
+}
+
+#frugtspaghetti3 {
+    visibility:hidden;
+    display: none;  
+
+}
+
+
+
+
+/*AMALIE MED BRILLER*/
+
+#amalie2 {
+    visibility: hidden; 
+    display: none; 
+}
+
+#amalie1 {
+    visibility: visible;
+}
+
+
+/*FIGUR BILLEDER*/
+
+.box {
+    display: flex; 
+    background-color: #323e18; 
+    padding: 15px; 
+    margin-top: -5px; 
+}
+
+.figurer {
+    flex: 33.33%; 
+    padding: 10px;
+    box-shadow: 3px 3px 10px #323e18; 
+}
+
+#hjerte {
+    visibility: hidden; 
+    display: none; 
+}
+
+#ansigt {
+    visibility: hidden; 
+    display: none; 
+}
+
+
+
+
+/*GØR AFTENSMADEN SJOV SEKTION*/
+
+/*Tallerken billeder*/
+.row1 {
+    display: flex; 
+}
+
+.column1 {
+    flex: 50%; 
+    padding: 15px;  
+}
+
+/*Gør aftensmaden sjov*/
+#overskrift5 {
+    padding-top: 25px; 
+    margin-left: 20px; 
+    margin-bottom: 10px; 
+    font-size: 1.2em;
+}
+
+/*- Og giv børnene madglæden tilbage*/
+#underoverskrift2 {
+    margin-bottom: 10px;
+    font-size: 1em; 
+    margin-left: 20px;
+}
+
+#tekst4 {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+#tekst5 {
+    margin-left: 20px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+}
+
+.tallerkner {
+    box-shadow: 3px 3px 10px #323e18; 
+}
+
+/*Spiral baggrund*/
+#afsnit4 {
+    background-image: url(Billeder/Spiral_2.png); 
+    background-size: 500px;  
+    background-repeat: no-repeat;
+    background-position: top; 
+}
+
+.alberte {
+    margin-bottom: 10px; 
+}
+
+/*ALBERTE MED SKÆG*/
+
+
+
+/*ALBERTE MED SKÆG SLUT*/
+
+
+
+
+
+/*OM OS SEKTIONEN*/
+
+#omos {
+    margin: 15px; /*Margin på hele sektionen*/
+}
+
+.row2 {
+    display: flex; /*Billeder ved siden af hinanden*/
+}
+
+.column2 {
+    flex: 33.33%; 
+    padding: 10px; 
+}
+
+/*Om os*/
+#overskrift7 { 
+    font-size: 1.2em; 
+    text-align: center;  
+}
+
+/*PORTRÆT TEKST*/
+
+.navn {
+    font-family: "Avenir heavy"; 
+    margin-top: 5px;
+}
+
+.titel {
+    font-style: oblique; 
+}
+
+ /*PORTRÆT TEKST SLUT*/
+
+/*SKYGGER*/
+.portrætbillede {
+  box-shadow: 3px 3px 10px #323e18; 
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:530px) {
+   .banner {
+    height: 30vh; 
+    }
+}
+
+@media (min-width:550px) {
+   .banner {
+    height: 31vh; 
+    }
+}
+
+@media (min-width:570px) {
+   .banner {
+    height: 32vh; 
+    }
+}
+
+@media (min-width:590px) {
+   .banner {
+    height: 34vh; 
+    }
+}
+
+@media (min-width:610px) {
+   .banner {
+    height: 35vh; 
+    }
+    .frugtspaghetti { /*Flytter frugtspaghetti billedet til højre*/
+        margin-left: 330px; 
+        margin-right: 30px;
+        margin-top: 10px; 
+    }
+    #afsnit2 { /*Øger størrelsen på baggrundssprialen*/
+    background-size: 550px;  
+    margin-bottom: 0px; 
+    }
+}
+
+@media (min-width:630px) {
+   .banner {
+    height: 36vh; 
+    }
+}
+
+@media (min-width:650px) {
+   .banner {
+    height: 37vh; 
+    }
+}
+
+@media (min-width:670px) {
+   .banner {
+    height: 39vh; 
+    }
+}
+
+@media (min-width:690px) {
+   .banner {
+    height: 40vh; 
+    }
+}
+
+@media (min-width:710px) {
+   .banner {
+    height: 41vh; 
+    }
+}
+
+@media (min-width:730px) {
+   .banner {
+    height: 42vh; 
+    }
+}
+
+@media (min-width:750px) {
+   .banner {
+    height: 44vh; 
+    }
+}
+
+@media (min-width:770px) {
+   .banner {
+    height: 45vh; 
+    }
+}
+
+@media (min-width:790px) {
+   .banner {
+    height: 46vh; 
+    }
+}
+
+@media (min-width:810px) {
+   .banner {
+    height: 48vh; 
+    }
+}
+
+@media (min-width:830px) {
+   .banner {
+    height: 50vh; 
+    }
+}
+
+@media (min-width:850px) {
+   .banner {
+    height: 51vh; 
+    }
+}
+
+@media (min-width:870px) {
+   .banner {
+    height: 52vh; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:890px) {
+   .banner {
+    height: 53vh; 
+    } 
+    #afsnit1{ /*Deler første tekst i to kolonner*/
+        column-count: 2 
+    }
+    #kids { /*Gør billederne af børnene synlige*/
+    visibility: visible; 
+    display: block; 
+    }   
+    #pige { /*Billede af pigen med guleroden*/
+        width: 60%;
+    }
+    #dreng1{ /*Billede af drengen der viser sin tallerken*/
+        width: 50%;  
+    }
+    #dreng2 { /*Billede af drengen der leger med maden*/
+        width: 50%; 
+    } 
+    #hjerte { /*Frugtspaghetti hjertet bliver synlig*/
+        visibility: visible;
+        display: block; 
+    }
+    #postits2 { /*Billedet af post its til desktop bliver synlig*/
+        visibility: visible; 
+        display: block; 
+    }
+    #postits1 { /*Billedet af post its til mobil gøres usynlig*/
+        visibility: hidden; 
+        display: none; 
+    }
+    #afsnit4 { /*Deler tredje tekst i to kolonner + padding*/
+        column-count: 2;
+        padding-top: 30px; 
+    }
+    #overskrift5 { /*Fjerner tidligere padding*/
+        padding-top: 0px; 
+    }
+    #afsnit4 { /*Øger størrelsen på spiralen + placering*/
+    background-size: 600px;  
+    background-repeat: no-repeat;
+    background-position: right; 
+    }
+    .column2 { /*Øger padding mellem portrætterne*/
+    padding-left: 30px; 
+    padding-right: 30px; 
+    }   
+    #overskrift7 { /*Øger størrelsen på overskriften "Om os"*/
+        font-size: 1.6em;
+        margin-top: 20px; 
+    }
+    #overskrift5 { /*Øger størrelsen på overskriften "Gør aftensmaden sjov"*/
+        font-size: 1.6em; 
+    }
+    #underoverskrift2 {/*Øger størrelsen på underoverskriften "- Og giv børnene madglæden tilbage"*/
+        font-size: 1.2em; 
+    }
+    #overskrift3 { /*Øger størrelsen på overskriften "Ugens produkt"*/
+        font-size: 1.6em; 
+        padding-bottom: 10px; 
+    }
+    #overskrift1 { /*Øger størrelsen på overskriften "Har du også problemer med kræsne børn?"*/
+        font-size: 1.6em; 
+        line-height: 1.2em; 
+    }
+    #underoverskrift1 { /*Øger størrelsen på overskriften "Så giv dem madmodet tilbage!"*/
+        font-size: 1.2em;
+    }
+    #givbørnenemadglædentilbage { /*Øger størrelsen på overskriften "Giv børnene madglæden tilbage"*/
+        font-size: 2em; 
+        padding: 10px; 
+    }
+    #vedatlegemedmaden{ /*Øger størrelsen på overskriften "Ved at lege med maden"*/
+        font-size: 1.4em;
+    }
+    .logo { /*Øger størrelsen på logoet"*/
+        font-size: 2.2em; 
+    }    
+     .frugtspaghetti { /*Margin på billederne af frugtspaghetti*/
+        margin-left: 20px; 
+        margin-right: 50px;
+        margin-top: 20px; 
+        padding-bottom: 0px;
+    }
+
+    #frugtspaghetti2 { /*Gør frugtspaghetti 2 billedet synlig + margin*/
+    visibility: visible;
+    display: block;  
+    margin-bottom: 30px; 
+    }
+    #afsnit2 {
+        column-count: 2;
+    }
+    #frugtspaghetti3 {
+    visibility:visible;
+    display: block;  
+    padding-bottom: 30px; 
+    margin-right: 20px; 
+    }
+}
+
+
+
+
+
+
+
+
+@media (min-width:910px) {
+   .banner {
+    height: 55vh; 
+    }
+}
+
+@media (min-width:930px) {
+   .banner {
+    height: 56vh; 
+    }
+}
+
+@media (min-width:950px) {
+   .banner {
+    height: 57vh; 
+    }
+}
+
+@media (min-width:970px) {
+   .banner {
+    height: 58vh; 
+    }
+    #afsnit2 {
+    }
+    #frugtspaghetti2 {
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width:990px) {
+   .banner {
+    height: 60vh; 
+    }
+}
+
+@media (min-width:1010px) {
+   .banner {
+    height: 61vh; 
+    }
+    #amalie1 { /*Gør "Amalie med briller1" usynlig*/
+        visibility: hidden;
+        display: none; 
+    }
+    #amalie2 { /*Gør "Amalie med briller2" synlig*/
+    visibility: visible; 
+    display: block;  
+    }
+}
+
+
+
+
+@media (min-width:1030px) {
+   .banner {
+    height: 62vh; 
+    }
+}
+
+@media (min-width:1050px) {
+   .banner {
+    height: 63vh; 
+    }
+}
+@media (min-width:1070px) {
+   .banner {
+    height: 65vh; 
+    }
+}
+@media (min-width:1090px) {
+   .banner {
+    height: 66vh; 
+    }
+}
+@media (min-width:1110px) {
+   .banner {
+    height: 67vh; 
+    }
+}
+@media (min-width:1130px) {
+   .banner {
+    height: 68vh; 
+    }
+}
+@media (min-width:1150px) {
+   .banner {
+    height: 70vh; 
+    }
+}
+@media (min-width:1170px) {
+   .banner {
+    height: 71vh; 
+    }
+}
+@media (min-width:1190px) {
+   .banner {
+    height: 72vh; 
+    }
+}
+@media (min-width:1210px) {
+   .banner {
+    height: 74vh; 
+    }
+}
+@media (min-width:1230px) {
+   .banner {
+    height: 75vh; 
+    }
+}
+v@media (min-width:1250px) {
+   .banner {
+    height: 76vh; 
+    }
+}
+@media (min-width:1270px) {
+   .banner {
+    height: 77vh; 
+    }
+}
+@media (min-width:1290px) {
+   .banner {
+    height: 79vh; 
+    }
+}
+@media (min-width:1310px) {
+   .banner {
+    height: 80vh; 
+    }
+     #frugtspaghetti1 { /*Gør frugtspaghetti 1 billedet synlig*/
+    visibility: visible;  
+    display: block; 
+    }
+    #frugtspaghetti3 {
+    visibility: hidden;
+    display: none;   
+    }
+     #afsnit2 {
+        column-count: 3;  
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+}
+@media (min-width:1330px) {
+   .banner {
+    height: 81vh; 
+    }
+}
+@media (min-width:1350px) {
+   .banner {
+    height: 82vh; 
+    }
+}
+@media (min-width:1370px) {
+   .banner {
+    height: 83vh; 
+    }
+}
+@media (min-width:1390px) {
+   .banner {
+    height: 84vh; 
+    }
+}
+@media (min-width:1410px) {
+   .banner {
+    height: 85vh; 
+    }
+}
+@media (min-width:1430px) {
+   .banner {
+    height: 86vh; 
+    }
+}
+@media (min-width:1450px) {
+   .banner {
+    height: 87vh; 
+    }
+}
+@media (min-width:1470px) {
+   .banner {
+    height: 88vh; 
+    }
+}
+@media (min-width:1490px) {
+   .banner {
+    height: 89vh; 
+    }
+}
+@media (min-width:1510px) {
+   .banner {
+    height: 90vh; 
+    }
+}
+@media (min-width:1530px) {
+   .banner {
+    height: 91vh; 
+    }
+}
+@media (min-width:1550px) {
+   .banner {
+    height: 92vh; 
+    }
+}
+@media (min-width:1570px) {
+   .banner {
+    height: 93vh; 
+    }
+}
+@media (min-width:1590px) {
+   .banner {
+    height: 94vh; 
+    }
+}
+@media (min-width:1610px) {
+   .banner {
+    height: 95vh; 
+    }
+}
+@media (min-width:1630px) {
+   .banner {
+    height: 96vh; 
+    }
+}
+@media (min-width:1650px) {
+   .banner {
+    height: 97vh; 
+    }
+}
+@media (min-width:1670px) {
+   .banner {
+    height: 98vh; 
+    }
+}
+@media (min-width:1690px) {
+   .banner {
+    height: 99vh; 
+    }
+}
+@media (min-width:1710px) {
+   .banner {
+    height: 100vh; 
+    }
+}
+@media (min-width:1730px) {
+   .banner {
+    height: 101vh; 
+    }
+}
+@media (min-width:1750px) {
+   .banner {
+    height: 102vh; 
+    }
+}
+@media (min-width:1770px) {
+   .banner {
+    height: 104vh; 
+    }
+}
+@media (min-width:1790px) {
+   .banner {
+    height: 105vh; 
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:1300px) {
+    #ansigt {
+        visibility: visible; 
+        display: block; 
+    }
+    #afsnit2 {
+        column-count:
+    }
+    .frugtspaghetti {
+        margin: 50px; 
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
