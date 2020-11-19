@@ -30,11 +30,16 @@ blockquote:before, blockquote:after, q:before, q:after {
 
 
 
-body {
+
+
+
+body { /*Skrifttype, baggrundsfarve og tekstfarve*/
     font-family: sans-serif; 
     background-color: #d9dfca; 
     color: #323e18; 
 }
+
+
 
 
 
@@ -89,15 +94,29 @@ body {
 
 
 
+
 /*FOOTER*/
 
 footer {
     background-color: #3f4e1e; 
     padding: 0.8em;
-    text-align: right; 
     font-size: 0.8em;
     color: white; 
+ 
 }
+
+#copyright {
+    text-align: right; 
+}
+
+#facebook {
+    padding-left: 5px; 
+}
+
+#instagram {
+    padding-left: 5px; 
+}
+
 
 
 
@@ -153,6 +172,8 @@ footer {
 
 
 
+
+
 /*BURGERBAR --> KRYDS*/
 
 .header .menu-btn:checked ~ ul {
@@ -179,6 +200,8 @@ footer {
 
 
 
+
+
 /*TYPOGRAFI*/
 
 h1 {
@@ -199,6 +222,8 @@ p {
 
 
 
+
+
 /*VIDEO + TEKST*/
 
 .banner {
@@ -209,7 +234,7 @@ p {
 
 }
 
-#video {
+#video { /*Video*/
     position:absolute; 
     top; 0;
     left: 0;
@@ -219,7 +244,7 @@ p {
 
 }
 
-.banner .content {
+.banner .content { /*Begge overskrifter*/
     position: relative;
     z-index: 1;
     max-width: 1000px;
@@ -227,7 +252,7 @@ p {
     text-align: center;
 }
 
-.banner .content h1 {
+.banner .content h1 { /*Giv børnene madglæden tilbage*/
     margin: 0;
     padding: 0;
     font-size: 1.4em;
@@ -236,7 +261,7 @@ p {
     
 }
 
-.banner .content h2 {
+.banner .content h2 { /*Ved at lege med maden*/
     margin-top: 10px; 
     font-size: 1.1em; 
 }
@@ -247,14 +272,16 @@ p {
 
 
 
+
 /*HAR DU OGSÅ PROBLEMER MED KRÆSNE BØRN? SEKTION*/
-#overskrift1 {
+
+#overskrift1 { /*Har du også problemer med kræsne børn?*/
     margin-bottom: 10px; 
     font-size: 1.2em; 
 }
 
-/*- Så giv dem madmodet tilbage*/
-#underoverskrift1 {
+
+#underoverskrift1 { /*Så giv dem madmodet tilbage*/
     margin-bottom: 10px; 
     font-size: 1em; 
 }
@@ -262,35 +289,41 @@ p {
     margin: 20px; 
 }
 
-#kids {
+#kids { /*Billedet med børnene*/
     visibility: hidden; 
     display: none; 
+    margin-right: -200px; 
+ 
 }
+
+
+
 
 
 /*POST ITS*/
 
-#postits2 {
+#postits2 { /*Første billede - Ikke synlig*/
     visibility: hidden; 
     display: none; 
 }
 
-#postits1 {
+#postits1 { /*Andet billede - Synlig*/
     visibility: visible; 
     display: block; 
 }
 
 
 
+
 /*UGENS PRODUKT*/
 
-#overskrift3 {
+#overskrift3 { /*Overskrift ugens produkt*/
     margin-bottom: 10px; 
     font-size: 1.2em;
     margin-left: 20px; 
 }
 
-#tekst3 {
+#tekst3 { /*Teksten under "Ugens produkt"*/
     margin-left: 20px; 
     margin-right: 20px; 
 }
@@ -303,30 +336,29 @@ p {
     background-repeat: no-repeat;
 }
 
+#frugtspaghetti2 { /*Billede af Castus Frugtspaghetti*/
+    padding-bottom: 10px; 
+}
 
-/*Billede*/
+/*Billeder*/
 
-.frugtspaghetti {
-    padding-bottom: 50px; 
+.frugtspaghetti { /*Begge billeder*/
     margin-right: 50px; 
     margin-left: 50px; 
     margin-top: 25px; 
+    margin-bottom: 30px; 
 }
 
-#frugtspaghetti1 {
+#frugtspaghetti1 { /*Gør første billede af Frugtspaghetti usynlig*/
     visibility: hidden; 
     display: none; 
+   
 }
 
-#frugtspaghetti2 {
+#frugtspaghetti2 { /*Gør andet billede af Frugtspaghetti synlig*/
     visibility: visible;
     display: block;
-}
-
-#frugtspaghetti3 {
-    visibility:hidden;
-    display: none;  
-
+    
 }
 
 
@@ -334,40 +366,44 @@ p {
 
 /*AMALIE MED BRILLER*/
 
-#amalie2 {
+#amalie2 { /*Gør første billede af "Amalie med briller" usynlig*/
     visibility: hidden; 
     display: none; 
 }
 
-#amalie1 {
+#amalie1 { /*Gør andet billede af "Amalie med briller" synlig*/
     visibility: visible;
+    display: block; 
 }
+
+
 
 
 /*FIGUR BILLEDER*/
 
-.box {
+.box { /*Baggrundsboksen bag billederne*/
     display: flex; 
     background-color: #323e18; 
     padding: 15px; 
     margin-top: -5px; 
 }
 
-.figurer {
-    flex: 33.33%; 
+.figurer { /*Billeder af Frugtspaghetti figurer*/
+    flex: 33.33%; /*3 billeder = 33,33% til hver*/
     padding: 10px;
     box-shadow: 3px 3px 10px #323e18; 
 }
 
-#hjerte {
+#hjerte { /*Billedet af hjerte figurer gøres usynlig*/
     visibility: hidden; 
     display: none; 
 }
 
-#ansigt {
+#ansigt { /*Billedet af ansigts figuren gøre usynlig*/
     visibility: hidden; 
     display: none; 
 }
+
 
 
 
@@ -379,7 +415,7 @@ p {
     display: flex; 
 }
 
-.column1 {
+.column1 { /*Får billederne til at stå ved siden af hinanden sammen med .row1*/
     flex: 50%; 
     padding: 15px;  
 }
@@ -399,18 +435,18 @@ p {
     margin-left: 20px;
 }
 
-#tekst4 {
+#tekst4 { /*Første tekst i dette afsnit*/
     margin-left: 20px; 
     margin-right: 20px; 
 }
 
-#tekst5 {
+#tekst5 { /*Anden tekst i dette afsnit*/
     margin-left: 20px; 
     margin-right: 20px; 
     margin-bottom: 20px; 
 }
 
-.tallerkner {
+.tallerkner { /*Giver skygge til tallerken billederne*/
     box-shadow: 3px 3px 10px #323e18; 
 }
 
@@ -422,13 +458,26 @@ p {
     background-position: top; 
 }
 
+
+
+
+
+
+
+/*ALBERTE MED SKÆG*/
+
 .alberte {
     margin-bottom: 10px; 
 }
 
-/*ALBERTE MED SKÆG*/
-
-
+#alberte1 { /*Gør det første billede af Alberte med skæg synlig */
+    visibility: visible; 
+    display: block; 
+}
+#alberte2 { /*Gør det andet billede af Alberte med skæg usynlig */
+    visibility: hidden; 
+    display: none; 
+}
 
 /*ALBERTE MED SKÆG SLUT*/
 
@@ -447,7 +496,7 @@ p {
 }
 
 .column2 {
-    flex: 33.33%; 
+    flex: 33.33%; /*Billeder ved siden af hinanden*/
     padding: 10px; 
 }
 
@@ -470,8 +519,7 @@ p {
 
  /*PORTRÆT TEKST SLUT*/
 
-/*SKYGGER*/
-.portrætbillede {
+.portrætbillede { /*Skygger på portrætbillederne*/
   box-shadow: 3px 3px 10px #323e18; 
 }
 
@@ -484,8 +532,13 @@ p {
 
 
 
+/*Vi blev nødt til at tilføje mange @media, fordi vi havde problemer med at video gik ind over det andet indhold på siden, når man lavede browseren større. Efterfølgende har vi dog fundet ud af at "løsningen" kun virker optimalt på en 16' mac */
 
-@media (min-width:530px) {
+
+
+
+
+@media (min-width:530px) { /*Disse @media øger gradvist højden, så indholdet bliver synlig under videoen */
    .banner {
     height: 30vh; 
     }
@@ -517,10 +570,14 @@ p {
         margin-left: 330px; 
         margin-right: 30px;
         margin-top: 10px; 
+        margin-bottom: 0px; 
     }
+ 
     #afsnit2 { /*Øger størrelsen på baggrundssprialen*/
-    background-size: 550px;  
-    margin-bottom: 0px; 
+        background-size: 400px;  
+        margin-bottom: 0px;
+        padding-bottom: 30px; 
+        
     }
 }
 
@@ -570,6 +627,15 @@ p {
    .banner {
     height: 45vh; 
     }
+    #afsnit1{ /*Deler første tekst i to kolonner*/
+        column-count: 2; 
+    
+    }
+    #kids { /*Gør billederne af børnene synlige*/
+        visibility: visible; 
+        display: block;
+        padding-right: 30px; 
+    }  
 }
 
 @media (min-width:790px) {
@@ -606,31 +672,10 @@ p {
 
 
 
-
-
-
-
-
 @media (min-width:890px) {
    .banner {
     height: 53vh; 
-    } 
-    #afsnit1{ /*Deler første tekst i to kolonner*/
-        column-count: 2 
-    }
-    #kids { /*Gør billederne af børnene synlige*/
-    visibility: visible; 
-    display: block; 
     }   
-    #pige { /*Billede af pigen med guleroden*/
-        width: 60%;
-    }
-    #dreng1{ /*Billede af drengen der viser sin tallerken*/
-        width: 50%;  
-    }
-    #dreng2 { /*Billede af drengen der leger med maden*/
-        width: 50%; 
-    } 
     #hjerte { /*Frugtspaghetti hjertet bliver synlig*/
         visibility: visible;
         display: block; 
@@ -644,24 +689,26 @@ p {
         display: none; 
     }
     #afsnit4 { /*Deler tredje tekst i to kolonner + padding*/
-        column-count: 2;
-        padding-top: 30px; 
+        column-count: 2; 
+        padding-top: 40px; 
     }
     #overskrift5 { /*Fjerner tidligere padding*/
         padding-top: 0px; 
     }
     #afsnit4 { /*Øger størrelsen på spiralen + placering*/
-    background-size: 600px;  
-    background-repeat: no-repeat;
-    background-position: right; 
+        background-size: 600px;  
+        background-repeat: no-repeat;
+        background-position: left; 
+        background-attachment:local; 
     }
     .column2 { /*Øger padding mellem portrætterne*/
-    padding-left: 30px; 
-    padding-right: 30px; 
+        padding-left: 30px; 
+        padding-right: 30px; 
     }   
     #overskrift7 { /*Øger størrelsen på overskriften "Om os"*/
         font-size: 1.6em;
-        margin-top: 20px; 
+        margin-top: 30px; 
+        margin-bottom: 10px; 
     }
     #overskrift5 { /*Øger størrelsen på overskriften "Gør aftensmaden sjov"*/
         font-size: 1.6em; 
@@ -698,24 +745,24 @@ p {
     }
 
     #frugtspaghetti2 { /*Gør frugtspaghetti 2 billedet synlig + margin*/
-    visibility: visible;
-    display: block;  
-    margin-bottom: 30px; 
+        visibility: visible;
+        display: block;  
+        margin-bottom: 30px; 
     }
-    #afsnit2 {
-        column-count: 2;
+    #afsnit2 { 
+        column-count: 2; /*Opdeler "Ugens produkt" i to kolonner*/
+        background-size: 350px; /*Øger størrelsen på spiralen*/
+        margin-bottom: 0px; 
+        padding-bottom: -50px; 
+        height: 280px;  
     }
-    #frugtspaghetti3 {
-    visibility:visible;
-    display: block;  
-    padding-bottom: 30px; 
-    margin-right: 20px; 
+    #frugtspaghetti2 { /*Padding på frugtspaghetti billedet*/
+        padding-bottom: 10px; 
+    }
+    .menu { /*Øger skriftstørelsen i menuen*/
+        font-size: 1.1em;
     }
 }
-
-
-
-
 
 
 
@@ -742,9 +789,7 @@ p {
    .banner {
     height: 58vh; 
     }
-    #afsnit2 {
-    }
-    #frugtspaghetti2 {
+    #frugtspaghetti2 { /*Øger paddingen på frugtspaghetti billedet*/
         padding-bottom: 30px;
     }
 }
@@ -769,12 +814,13 @@ p {
     }
 }
 
-
-
-
 @media (min-width:1030px) {
    .banner {
     height: 62vh; 
+    }
+       #afsnit2 { /*Øger højden i sektionen "Ugens produkt*/
+        height: 330px; 
+        margin-bottom: -50px; 
     }
 }
 
@@ -782,7 +828,7 @@ p {
    .banner {
     height: 63vh; 
     }
-}
+  }
 @media (min-width:1070px) {
    .banner {
     height: 65vh; 
@@ -791,6 +837,17 @@ p {
 @media (min-width:1090px) {
    .banner {
     height: 66vh; 
+    }
+      #afsnit2 { /*Øger højden på teksten "Ugens produkt"*/
+        height: 350px;  
+    }
+    #alberte1 { /*Gør "Alberte med skæg1" usynlig*/
+    visibility: hidden; 
+    display: none; 
+    }
+    #alberte2 { /*Gør "Alberte med skæg2" synlig*/
+    visibility: visible; 
+    display: block; 
     }
 }
 @media (min-width:1110px) {
@@ -807,11 +864,23 @@ p {
    .banner {
     height: 70vh; 
     }
-}
+      #afsnit2 { /*Øger højden i sektionen "Ugens produkt*/
+        margin-bottom: -30px; 
+    }
+        
+    #afsnit4 {/*Spiral baggrund*/
+    background-image: url(Billeder/Spiral_baggrund.png); 
+    background-size: 700px;  
+    background-repeat: no-repeat;
+    background-position: left; 
+    }
+    
+  }  
 @media (min-width:1170px) {
    .banner {
     height: 71vh; 
     }
+    
 }
 @media (min-width:1190px) {
    .banner {
@@ -821,6 +890,9 @@ p {
 @media (min-width:1210px) {
    .banner {
     height: 74vh; 
+    }
+      #afsnit2 { /*Øger højden i sektionen "Ugens produkt*/
+        margin-bottom: -10px; 
     }
 }
 @media (min-width:1230px) {
@@ -837,7 +909,32 @@ v@media (min-width:1250px) {
    .banner {
     height: 77vh; 
     }
-}
+      #kids { /*Maks størrelse på billedet af børnene + margin*/
+        max-width: 1000px;
+        margin-left: 50px; 
+    }
+    p { /*Øger størrelsen på teksten*/
+        font-size: 1.2em; 
+    }
+    .menu { /*Øger størrelsen på teksten i menuen*/
+        font-size: 1.2em; 
+    }
+    
+    /*Padding øges i de forskellige tekst afsnit*/
+    #afsnit1 { 
+        padding-left: 30px; 
+    }
+    #afsnit2 {
+        padding-left: 30px; 
+    }
+    #afsnit4 {
+        padding-left: 30px; 
+    }
+    
+} 
+
+
+
 @media (min-width:1290px) {
    .banner {
     height: 79vh; 
@@ -847,29 +944,19 @@ v@media (min-width:1250px) {
    .banner {
     height: 80vh; 
     }
-     #frugtspaghetti1 { /*Gør frugtspaghetti 1 billedet synlig*/
-    visibility: visible;  
-    display: block; 
+      #ansigt { /*Billedet af ansigtsfiguren i frugtspaghetti gøres synlig*/
+        visibility: visible; 
+        display: block; 
     }
-    #frugtspaghetti3 {
-    visibility: hidden;
-    display: none;   
-    }
-     #afsnit2 {
-        column-count: 3;  
-    }
-    
-    
-    
-    
-    
-    
-    
-    
 }
+
 @media (min-width:1330px) {
    .banner {
     height: 81vh; 
+    }
+    #frugtspaghetti2 { /*Der tilføjes en maks-bredde til frugtspaghetti billedet*/
+        max-width: 500px; 
+        margin-left: 120px; 
     }
 }
 @media (min-width:1350px) {
@@ -880,6 +967,20 @@ v@media (min-width:1250px) {
 @media (min-width:1370px) {
    .banner {
     height: 83vh; 
+    }
+        #frugtspaghetti1 { /*Gør frugtspaghetti 1 billedet synlig*/
+        visibility: visible;  
+        display:block; 
+            width: 90%; 
+    }
+        #frugtspaghetti2 { /*Maks-bredden på frugtspaghetti billedet fjernes*/
+        max-width: none; 
+        margin-left: 0px; 
+            width: 90%; 
+    }
+       #afsnit2 { /*Giver sektionen "Ugens produkt" tre kolonner + højde*/
+        column-count: 3; 
+        height: 350px;   
     }
 }
 @media (min-width:1390px) {
@@ -896,12 +997,78 @@ v@media (min-width:1250px) {
    .banner {
     height: 86vh; 
     }
+
 }
 @media (min-width:1450px) {
    .banner {
     height: 87vh; 
     }
+    #overskrift7 { /*Øger størrelsen på overskriften "Om os"*/
+        font-size: 2em;
+        margin-top: 60px; 
+        margin-bottom: 20px;
+    }
+    #overskrift5 { /*Øger størrelsen på overskriften "Gør aftensmaden sjov"*/
+        font-size: 2em; 
+        margin-bottom: 25px; 
+        padding-top: 10px; 
+        }
+    
+    #afsnit4 { /*Spiral baggrund*/
+    background-image: url(Billeder/Spiral_baggrund.png); 
+    background-size: 700px;  
+    background-repeat: no-repeat;
+    background-position: left; 
+    }
+    
+    #underoverskrift2 {/*Øger størrelsen på underoverskriften "- Og giv børnene madglæden tilbage"*/
+        font-size: 1.5em; 
+        margin-bottom: 15px; 
+    }
+    #overskrift3 { /*Øger størrelsen på overskriften "Ugens produkt"*/
+        font-size: 2em; 
+        padding-bottom: 15px; 
+    }
+    #overskrift1 { /*Øger størrelsen på overskriften "Har du også problemer med kræsne børn?"*/
+        font-size: 2em; 
+        margin-bottom: 15px;
+    }
+    #underoverskrift1 { /*Øger størrelsen på overskriften "Så giv dem madmodet tilbage!"*/
+        font-size: 1.4em;
+        margin-bottom: 15px; 
+    }
+    #givbørnenemadglædentilbage { /*Øger størrelsen på overskriften "Giv børnene madglæden tilbage"*/
+        font-size: 3em; 
+        padding: 40px; 
+    }
+    #vedatlegemedmaden{ /*Øger størrelsen på overskriften "Ved at lege med maden"*/
+        font-size: 2em;
+    }
+    .logo { /*Øger størrelsen på logoet"*/
+        font-size: 2.8em; 
+    }   
+    .menu { /*Øger skriftstørrelsen på menuteksten*/
+        font-size: 1.4em;
+        margin-top: 20px; 
+    }
+      #afsnit2 { /*Øger højden i sektionen "Ugens produkt*/
+        margin-bottom: 30px; 
+        height: 360px; 
+    }
+    #portrætbjarne { /*Øger margin til venstre ved billedet af Bjarne*/
+        margin-left: 50px; 
+    }
+    #portrætamalie { /*Øger margin til højre ved billedet af Amalie*/
+        margin-right: 50px; 
+    }
+       .column2 { /*Øger padding mellem portrætterne*/
+        padding-left: 40px; 
+        padding-right: 40px; 
+    } 
 }
+    
+    
+    
 @media (min-width:1470px) {
    .banner {
     height: 88vh; 
@@ -926,87 +1093,81 @@ v@media (min-width:1250px) {
    .banner {
     height: 92vh; 
     }
+      #afsnit2 { /*Giver sektionen "Ugens produkt" tre kolonner*/
+        column-count: 3; 
+        height: 400px; 
+        margin-right: 10px;  
+    }
 }
 @media (min-width:1570px) {
    .banner {
-    height: 93vh; 
+    height: 94vh; 
+    }
+      p { /*Øger skriftstørrelsen på brødteksten*/
+        font-size: 1.4em;
+        line-height: 1.5em; 
     }
 }
 @media (min-width:1590px) {
    .banner {
-    height: 94vh; 
+    height: 95vh; 
     }
 }
 @media (min-width:1610px) {
    .banner {
-    height: 95vh; 
+    height: 96vh; 
     }
 }
 @media (min-width:1630px) {
    .banner {
-    height: 96vh; 
+    height: 97vh; 
     }
 }
 @media (min-width:1650px) {
    .banner {
-    height: 97vh; 
-    }
-}
-@media (min-width:1670px) {
-   .banner {
-    height: 98vh; 
-    }
-}
-@media (min-width:1690px) {
-   .banner {
     height: 99vh; 
     }
+      #afsnit2 { /*Øger højden i sektionen "Ugens produkt*/
+        height: 350px; 
+    }    
 }
-@media (min-width:1710px) {
+@media (min-width:1670px) {
    .banner {
     height: 100vh; 
     }
 }
-@media (min-width:1730px) {
+@media (min-width:1690px) {
    .banner {
     height: 101vh; 
     }
 }
-@media (min-width:1750px) {
+@media (min-width:1710px) {
    .banner {
     height: 102vh; 
     }
 }
-@media (min-width:1770px) {
+@media (min-width:1730px) {
    .banner {
     height: 104vh; 
     }
 }
-@media (min-width:1790px) {
+@media (min-width:1750px) {
    .banner {
     height: 105vh; 
     }
 }
-
-
-
-
-
-
-
-@media (min-width:1300px) {
-    #ansigt {
-        visibility: visible; 
-        display: block; 
+@media (min-width:1770px) {
+   .banner {
+    height: 106vh; 
     }
-    #afsnit2 {
-        column-count:
-    }
-    .frugtspaghetti {
-        margin: 50px; 
-    }
-
 }
+@media (min-width:1790px) {
+   .banner {
+    height: 109vh; 
+    }
+}
+
+
 
 
 
